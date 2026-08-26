@@ -1,0 +1,292 @@
+.notifications-page {
+  min-height: 100vh;
+  background: #f7f7fb;
+  padding: 40px 20px;
+}
+
+.notifications-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.notifications-header {
+  margin-bottom: 25px;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #5b3be8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.notification-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-title-row h1 {
+  margin: 0 0 6px;
+  color: #292844;
+  font-size: 30px;
+}
+
+.notification-title-row p {
+  margin: 0;
+  color: #888598;
+  font-size: 13px;
+}
+
+.unread-count {
+  background: #eeeaff;
+  color: #5b3be8;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.notification-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #9995a7;
+  font-size: 12px;
+}
+
+.notification-actions button {
+  border: none;
+  background: transparent;
+  color: #5b3be8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 17px;
+
+  background: white;
+  border: 1px solid #e8e6f0;
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.notification-card:hover {
+  border-color: #d8d1f5;
+  transform: translateY(-1px);
+}
+
+.notification-unread {
+  background: #fcfbff;
+  border-color: #ddd7f7;
+}
+
+.notification-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #f0ecff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 19px;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification-card h3 {
+  margin: 0 0 5px;
+  color: #302e49;
+  font-size: 14px;
+}
+
+.notification-card p {
+  margin: 0;
+  color: #77748a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.notification-time {
+  display: block;
+  margin-top: 6px;
+  color: #aaa7b5;
+  font-size: 10px;
+}
+
+.new-badge {
+  padding: 3px 6px;
+  border-radius: 4px;
+
+  background: #eeeaff;
+  color: #5b3be8;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.unread-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #5b3be8;
+}
+
+.empty-notifications {
+  background: white;
+  border: 1px solid #e8e6f0;
+  border-radius: 18px;
+
+  padding: 65px 25px;
+
+  text-align: center;
+}
+
+.empty-bell {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: #f0ecff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+}
+
+.empty-notifications h2 {
+  margin: 0 0 8px;
+  color: #302e49;
+  font-size: 19px;
+}
+
+.empty-notifications p {
+  margin: 0 auto 22px;
+  color: #89869b;
+  font-size: 12px;
+}
+
+.empty-notifications button {
+  border: none;
+  background: #5b3be8;
+  color: white;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.notification-error {
+  padding: 16px;
+
+  background: #fff8f8;
+  border: 1px solid #efdcdc;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification-error div {
+  flex: 1;
+}
+
+.notification-error strong {
+  font-size: 13px;
+  color: #704747;
+}
+
+.notification-error p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  color: #8b6969;
+}
+
+.notification-error button {
+  border: none;
+  background: #f2e5e5;
+  color: #814747;
+
+  padding: 8px 12px;
+  border-radius: 7px;
+
+  cursor: pointer;
+}
+
+.notification-loading {
+  text-align: center;
+  color: #77748a;
+  padding-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .notifications-page {
+    padding: 25px 15px;
+  }
+
+  .notification-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .notification-title-row h1 {
+    font-size: 27px;
+  }
+
+  .notification-card {
+    align-items: flex-start;
+    padding: 14px;
+  }
+
+  .notification-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

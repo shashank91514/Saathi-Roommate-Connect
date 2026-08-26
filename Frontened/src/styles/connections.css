@@ -1,0 +1,466 @@
+.connections-page {
+  min-height: 100vh;
+  background: #f7f7fb;
+  padding: 35px 24px 60px;
+}
+
+.connections-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.connections-header {
+  margin-bottom: 32px;
+}
+
+.connections-header h1 {
+  margin: 15px 0 7px;
+  color: #191936;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.connections-header p {
+  margin: 0;
+  color: #77758b;
+  font-size: 14px;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #5b3be8;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #4325c8;
+}
+
+
+/* SECTION */
+
+.connection-section {
+  background: #ffffff;
+  border: 1px solid #e8e6f1;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 5px 20px rgba(40, 30, 90, 0.04);
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+  color: #20203d;
+}
+
+.section-title p {
+  margin: 0;
+  color: #858298;
+  font-size: 13px;
+}
+
+.count-badge {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 9px;
+
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0ecff;
+  color: #5b3be8;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* GRID */
+
+.connections-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+
+/* CARD */
+
+.connection-card {
+  min-width: 0;
+
+  border: 1px solid #ebe9f2;
+  background: #fbfbfe;
+
+  border-radius: 15px;
+  padding: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  transition: 0.2s ease;
+}
+
+.connection-card:hover {
+  border-color: #dcd5fb;
+  box-shadow: 0 5px 18px rgba(50, 35, 120, 0.06);
+}
+
+.connection-user {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.connection-avatar {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #eeeaff;
+  color: #5b3be8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  overflow: hidden;
+}
+
+.connection-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.connection-info {
+  min-width: 0;
+}
+
+.connection-info h3 {
+  margin: 0 0 5px;
+
+  color: #20203d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.connection-info p {
+  margin: 3px 0;
+
+  color: #77758b;
+  font-size: 12px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* BUTTONS */
+
+.connection-actions {
+  display: flex;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.accept-button,
+.reject-button,
+.profile-button,
+.find-button {
+  border: none;
+  border-radius: 9px;
+
+  padding: 9px 13px;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.accept-button {
+  background: #5b3be8;
+  color: white;
+}
+
+.accept-button:hover {
+  background: #4728d0;
+}
+
+.reject-button {
+  background: #fff1f2;
+  color: #d23e4c;
+}
+
+.reject-button:hover {
+  background: #ffe4e6;
+}
+
+.accept-button:disabled,
+.reject-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.profile-button {
+  background: #f0ecff;
+  color: #5b3be8;
+}
+
+.profile-button:hover {
+  background: #e4ddff;
+}
+
+.find-button {
+  margin-top: 18px;
+  background: #5b3be8;
+  color: white;
+}
+
+.find-button:hover {
+  background: #4728d0;
+}
+
+
+/* STATUS */
+
+.status-badge {
+  flex-shrink: 0;
+
+  padding: 7px 11px;
+
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.pending-badge {
+  background: #fff6df;
+  color: #a36c00;
+}
+
+.accepted-badge {
+  background: #e8f8ef;
+  color: #16824a;
+}
+
+.rejected-badge {
+  background: #fff0f1;
+  color: #d13d4b;
+}
+
+.connection-status-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+
+/* EMPTY */
+
+.empty-state {
+  text-align: center;
+  padding: 30px 20px 20px;
+}
+
+.empty-state > div:first-child {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.empty-icon {
+  width: 52px;
+  height: 52px;
+
+  margin: 0 auto 12px;
+
+  border-radius: 50%;
+
+  background: #f2efff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.small-icon {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.empty-state h3 {
+  margin: 0 0 6px;
+
+  color: #292844;
+  font-size: 15px;
+}
+
+.empty-state p {
+  margin: 0;
+
+  color: #89869b;
+  font-size: 12px;
+}
+
+.empty-state.small {
+  padding: 24px 15px 15px;
+}
+
+
+/* ERROR */
+
+.connections-error {
+  background: #fff;
+  border: 1px solid #f0d1d4;
+  border-radius: 15px;
+
+  padding: 18px;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.connections-error p {
+  color: #c33b49;
+  font-size: 13px;
+}
+
+.connections-error button {
+  border: none;
+  background: #5b3be8;
+  color: white;
+
+  padding: 9px 15px;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+
+/* LOADING */
+
+.connections-loading {
+  min-height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.connections-loading h2 {
+  color: #77758b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loading-spinner {
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid #e7e3fb;
+  border-top-color: #5b3be8;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .connections-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .connections-page {
+    padding: 25px 14px 45px;
+  }
+
+  .connections-header h1 {
+    font-size: 27px;
+  }
+
+  .connection-section {
+    padding: 18px;
+  }
+
+  .connection-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .connection-user {
+    width: 100%;
+  }
+
+  .connection-actions {
+    width: 100%;
+  }
+
+  .accept-button,
+  .reject-button {
+    flex: 1;
+  }
+
+  .connection-status-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 400px) {
+  .connection-status-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profile-button {
+    width: 100%;
+  }
+}
